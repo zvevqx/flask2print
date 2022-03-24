@@ -172,7 +172,7 @@ blockquote, q {
 blockquote:before {
 	content:'"';
 	display: block;
-	font-size:3.6em;
+	font-size:2em;
 	position: absolute;
 	top:-5px;
 	left:-10px;
@@ -181,7 +181,7 @@ blockquote:before {
 blockquote:after {
 	content:'"';
 	display: block;
-	font-size:3.6em;
+	font-size:2em;
 	position: absolute;
 	bottom:10px;
 	right:5px;

@@ -82,6 +82,23 @@ That's some text with a footnote.[^1]
 
 Massa eget egestas purus viverra accumsan. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Ultricies lacus sed turpis tincidunt id. Egestas dui id ornare arcu odio. Neque volutpat ac tincidunt vitae semper quis lectus. In dictum non consectetur a erat nam at lectus urna. Sociis natoque penatibus et magnis dis parturient montes. Et tortor at risus viverra adipiscing. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. Dolor sit amet consectetur adipiscing. Et sollicitudin ac orci phasellus.
 
+```mermaid
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+```
+
+
+
+
+
+
 *![alt](https://pixy.org/src/465/4654979.jpg)*
 
 Massa enim nec dui nunc mattis enim. Id aliquet lectus proin nibh nisl condimentum id. Risus nec feugiat in fermentum posuere. Et tortor consequat id porta nibh. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Fusce id velit ut tortor pretium viverra. Sollicitudin aliquam ultrices sagittis orci a. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Aliquam ut porttitor leo a diam. Scelerisque varius morbi enim nunc faucibus a pellentesque. Malesuada fames ac turpis egestas maecenas pharetra convallis.
