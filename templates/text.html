@@ -1,0 +1,59 @@
+{% extends 'base.html'%}
+
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+
+    <div id="cover">
+    <article>
+        {% for a in articles if a.type == "cover" %}
+            <h1> {{a.title}}</h1>
+            <span class="pub_date">{{a.published}}</span>
+            <span class="subtitle">{{a.subtitle}}</span>
+            <div class="cover_img">
+                <img src="{{a.f_image}}"/>
+            </div>
+        {%endfor%}
+        <ul class="index_list">
+        {% for a in articles  %}
+           <li> {{a.author}} ,</li>
+        {% endfor %}
+        </ul>
+    </article>
+    </div>
+
+    <article>
+    </article>
+
+    <div class="index">
+        <article>
+            <h2>Tables des matière</h2>
+            <ul class="index_list">
+                {% for a in articles if a.type =="article" %} 
+                    <li>{{a.title}} / {{a.subtitle}} - {{a.author}} </li>
+                {% endfor %}
+            </ul>
+        </article>
+    </div>
+
+    <article>
+    </article>
+
+{% for a in articles if a.type =="article" %} 
+           <article>
+                <div class="title_data">{{a.title}} - {{a.subtitle}}</div>
+                    <div class="content_wrapper {{a.template}} " >
+
+                    {% if a.featured_image %}
+                    <img class="thumbImg" src="{{url_for('static', filename="md_files/"+a.path+"/"+a.featured_image)}}"/>
+                    {%endif%}
+                    {{ a }}
+                </div>
+                <!--</div>-->
+            </article>
+{%endfor%}
+
+{% endblock %}
+
+

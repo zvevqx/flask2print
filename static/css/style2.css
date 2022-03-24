@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'belgika5th';
+    src: url('fonts/belgika-5th-webfont.woff2') format('woff2'),
+         url('fonts/belgika-5th-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'compagnonmedium';
+    src: url('fonts/compagnon-medium-webfont.woff2') format('woff2'),
+         url('fonts/compagnon-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'compagnonroman';
+    src: url('fonts/compagnon-roman-webfont.woff2') format('woff2'),
+         url('fonts/compagnon-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'compagnonbold';
+    src: url('fonts/compagnon-bold-webfont.woff2') format('woff2'),
+         url('fonts/compagnon-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'compagnonlight';
+    src: url('fonts/compagnon-light-webfont.woff2') format('woff2'),
+         url('fonts/compagnon-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'compagnonlight_italic';
+    src: url('fonts/compagnon-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/compagnon-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* 12 /24 /36 pt */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	font-size:10pt;
+	margin:auto;
+	line-height: 1;
+  font-family: 'compagnonroman', monospace;
+}
+
+ol, ul {
+/* 	list-style: none; */
+	/*! line-height: 110%; */
+}
+
+ul{
+	padding-left: 1.4em;
+	list-style: disc;
+  margin-bottom:2em;
+}
+
+ol{
+	padding-left: 1.4em;
+	list-style: decimal;
+	margin-bottom:2em;
+}
+
+
+#cover h1{
+  font-size:3.6em;
+	margin-top:5mm;
+  font-family:'compagnonroman';
+}
+
+
+#cover span{
+	display: block;
+  font-size:3.6em;
+	margin-top:5mm;
+  font-family:'compagnonroman';
+}
+
+#cover .index_list li {
+    display:inline;
+	  font-size:2.4em;
+	  margin-top:5mm;
+    font-family:'compagnonroman';
+	
+}
+
+.cover_img {
+    display:block;
+    max-width:100%;
+	  padding:10%;
+    margin:auto;
+}
+
+.cover_img img {
+    width:100%;
+}
+
+.index .index_list li{
+   font-size:2.4em;
+	 display: block;
+	 margin-top:0mm;
+   font-family:'compagnonroman';
+   margin-bottom: 10px;
+	 
+}
+
+.index h2{
+	  font-size:3.6em;
+	  margin-top:5mm;
+    font-family:'compagnonroman';
+    margin-bottom: 2em;
+}
+
+blockquote, q {
+	color: grey;
+	padding: 1em;
+	font-style: italic;
+	position:relative;
+	display:block;
+	
+}
+
+blockquote:before {
+	content:'"';
+	display: block;
+	font-size:3.6em;
+	position: absolute;
+	top:-5px;
+	left:-10px;
+}
+
+blockquote:after {
+	content:'"';
+	display: block;
+	font-size:3.6em;
+	position: absolute;
+	bottom:10px;
+	right:5px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+em, i{
+	font-family: compagnonlight_italic;
+	font-style : italic;
+} 
+strong , b{
+	font-family:compagnonmedium;
+	font-weight: bolder;
+}
+
+strong em{
+	font-family:compagnonbold;
+}
+
+article p {
+	margin-bottom:5mm;
+}
+
+.content_wrapper{
+	padding: 0mm 0mm 0mm 0mm;
+  font-size:2.4em;
+}
+
+.col2{
+	   padding: 0mm 0mm 0mm 0mm;
+     column-count: 2;
+	   column-gap: 2em;
+     font-size:1.2em;
+}
+
+h1{
+	font-size:3.6em;
+	margin-top:5mm;
+  font-family:'compagnonroman';
+}
+
+h2,h3 ,h4 {
+	font-size:2.4em;
+	line-height: 110%;
+	margin-bottom: 12pt;
+	margin-top: 12pt;
+}
+
+img {
+    max-width:90%!important;
+	 display: block;
+	margin:auto;
+	margin-bottom: 2em; 
+	
+}
+
+em img {
+  width : 50%;
+	display: inline-block;
+	float:left;
+	margin:1em 1em 1em 0;
+}
+
+key{
+	display: inline-block;
+	border:solid 1px darkgray;
+  border-radius:5px;
+	background: lightgrey;
+	padding: 0.5em;
+	font-weight: bolder;
+}
+
+pre{
+	padding:1em;
+	background: lightgray;
+	color: #000;
+	white-space: pre-wrap;
+}
+pre code{
+	color: #000;
+	font-weight:normal;
+}
+
+code{
+	font-family: mono;
+	color:darkgray;
+	font-weight:bold;
+}
+
+table{
+	border: solid 1px lightgrey;
+	margin:1em auto
+}
+table thead{
+	background: lightgray;
+}
+table th{
+	padding:0.5em;
+}
+
+table td{
+	padding:0.5em;
+	border: solid 1px lightgray;
+}
+dl{
+	padding: 0.5em;
+	font-size:0.8em;
+}
+dt{
+	font-family: compagnonbold;
+	margin-bottom:0.5em;
+}
+
+dd{
+	padding: 0.5em;
+}
+
+
+h2 { string-set: h2data content();}
+h3 { string-set: h3data content();}
+
+.title_data{
+	position :running(title);
+	display:block;
+}
+.topLeft_pageLeft{
+	position :running(topLeftPL);
+	display:block;
+}
+.bottomLeft_info{
+	position :running(bottomLeft);
+	display:block;
+}
+article , hr {
+	page-break-after: always!important;
+}
+hr{
+	color:#fff;
+	height:0;
+	background:#fff;
+}
+
+
+.footnote hr{
+  page-break-after: avoid!important;
+}
+
+@media print {
+
+}
+
+@page{
+	size:A4; 
+	margin: 30mm 10mm 10mm 10mm; 
+//	marks: crop ;
+//	bleed:5mm;
+	
+	@top-right{
+			content:  counter(page);
+			font-family:'compagnonroman';
+			font-size:1em;
+	   }
+	
+	@bottom-left ,	@bottom-right {
+
+	  }
+	
+	@top-center { 
+    content: "rendering research";
+		text-transform:capitalize;
+		font-size:0.7em;
+    font-family:'compagnonroman';
+    }
+	
+
+	
+}
+
+@page:blank {
+  @top-center { 
+    content: "This page is intentionally left blank";
+    }
+}
+
+@page:right{
+	margin-left: 20mm;
+	@bottom-right{
+		  content: element(title);
+			font-size:1em;
+      font-family:'compagnonroman';
+
+	 }
+}
+
+@page:left{
+	margin-right: 20mm;
+	@bottom-left{
+		  content: element(title);
+	   		font-size:1em;
+    font-family:'compagnonroman'; 
+	}
+}
+
+
+@page:first{
+	@top-center{
+		 content:"";
+	   }
+  	@top-right{
+	    content:"";
+	   }
+		@bottom-left{
+		  content: "";
+	 }
+}
+
+
+    
+@page:nth(3){
+//    background:red;
+}
+
+
+

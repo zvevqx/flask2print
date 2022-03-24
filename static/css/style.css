@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'belgika5th';
+    src: url('fonts/belgika-5th-webfont.woff2') format('woff2'),
+         url('fonts/belgika-5th-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josafronderegular';
+    src: url('fonts/josafronde-regular-webfont.woff2') format('woff2'),
+         url('fonts/josafronde-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* 12 /24 /36 pt */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	font-size:10pt;
+	margin:auto;
+	line-height: 1;
+        font-family: 'josafronderegular', monospace;
+}
+
+ol, ul {
+	list-style: none;
+	font-size: 20pt;
+	line-height: 110%;
+	margin:auto;
+}
+
+#cover .index_list {
+    font-size:3em;
+}
+
+.index_list {
+    display:inline-block;
+    font-size:5em;
+}
+
+.cover_img {
+    display:block;
+    width: 80%;
+    margin:auto;
+    
+}
+
+li {
+    margin-bottom: 12pt;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+em{
+	font-style : italic;
+} 
+
+article{
+	background:transparent;
+	float: none !important;
+	position:relative;
+	padding:0mm;
+}
+
+article .content_wrapper .thumbImg{
+	display:block;
+	max-width:100%;
+	margin-bottom: 5mm;
+	filter: grayscale(1);
+}
+
+article p {
+	margin-bottom:5mm;
+}
+
+.content_wrapper{
+	padding: 0mm 0mm 0mm 0mm;
+        font-size:1.2em;
+}
+
+.long{
+	padding: 0mm 0mm 0mm 0mm;
+        column-count: 2;
+        font-size:1.2em;
+}
+
+h1{
+	font-size:3.6em;
+	margin-top:5mm;
+        font-family:'belgika5th';
+}
+
+
+#front_article .index ul li{
+	margin : 0;
+	padding:0;
+	text-indent:0;
+	padding-bottom:5mm;
+}
+
+
+h2 {
+	font-size:20pt;
+	line-height: 110%;
+	margin-bottom: 12pt;
+	margin-top: 12pt;
+	letter-spacing: -1pt;
+}
+
+em img {
+        width : 50%;
+	display: inline-block;
+}
+
+@media print {
+
+	h2 { string-set: h2data content();}
+	h3 { string-set: h3data content();}
+	.topLeft_info{
+		position :running(topleft);
+		display:block;
+	}
+
+	.topLeft_pageLeft{
+		position :running(topLeftPL);
+		display:block;
+	}
+
+	.bottomLeft_info{
+		position :running(bottomLeft);
+		display:block;
+	}
+	article , hr {
+		page-break-after: always;
+		}
+	hr{
+		color:#fff;
+		height:0;
+		background:#fff;
+	}
+
+}
+
+@page{
+	size:A4; 
+	margin: 10mm 7mm 7mm 7mm; 
+//	marks: crop ;
+//	bleed:5mm;
+	@bottom-left {
+		margin-bottom:5mm;
+	  }	
+	}
+
+@page :blank {
+  @top-center { 
+    content: "This page is intentionally left blank";
+    }
+}
+
+@page:right{
+	margin-left: 10mm;
+
+	@top-left{
+		//content: element(topleft);
+	}
+
+	@top-right{
+		 content:  counter(page);
+			font-size:10pt;
+ // 			font-family: "AkkuratMonoLLWeb-Regular";
+	}
+}
+
+@page:left{
+	margin-right: 10mm;
+
+	@top-left{
+		content:"rendering research";
+		font-size:10pt;
+//		font-family: "AkkuratMonoLLWeb-Regular";
+		//content: element(topleft);
+	}
+
+	@bottom-center{
+		content : element(topLeftPL); 
+	}
+
+	@top-right{
+	        content: counter(page);
+		font-size:10pt;
+		font-family: "AkkuratMonoLLWeb-Regular";
+	   }
+}
+
+
+@page:first{
+	@top-right{
+		 content:counter(page);
+	   }
+}
+
+
+    
+@page:nth(3){
+//    background:red;
+}
+
+
+
