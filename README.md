@@ -1,6 +1,7 @@
 # FLASK2PRINT
 
 simple flask app to generate pdf from markdown file 
+https://www.markdownguide.org/cheat-sheet
 
 All images files must be in <key>*static/img/filename.ext*</key>
 
