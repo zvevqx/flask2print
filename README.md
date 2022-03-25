@@ -11,7 +11,7 @@ as usual
 1. `git clone https://github.com/zvevqx/flask2print.git`
 2. `cd flask2print`
 3. create a virtual environement 
-    - **Linux** / **OSX** with python3 `python -m venv venv
+    - **Linux** / **OSX** with python3 `python -m venv venv`
     - **windows** `py -3 -m venv venv`
 4. activate venv 
     - **Linux** / **OSX** : `. venv/bin/activate`
