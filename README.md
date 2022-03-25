@@ -2,7 +2,7 @@
 
 simple flask app to generate pdf from markdown file 
 
-##install
+## install
 
 as usual 
 
@@ -17,7 +17,7 @@ as usual
 5. `pip install -r requirements.txt`
 6. `flask run`
 
-##usage
+## usage
 
 - go to `http://localhost:5000` to view all **markdown** files as `html`
 - go to `http://localhost:5000/pdf` to generate pdf 
