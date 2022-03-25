@@ -2,6 +2,8 @@
 
 simple flask app to generate pdf from markdown file 
 
+All images files must be in <key>static/img/fileanme.ext</key>
+
 ## install
 
 as usual 
