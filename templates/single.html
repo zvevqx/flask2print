@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+
+           <article>
+                <div class="title_data">{{page.title}} - {{page.subtitle}}</div>
+                    <div class="content_wrapper {{page.template}} " >
+
+                    {% if page.featured_image %}
+                    <img class="thumbImg" src="{{url_for('static', filename="md_files/"+page.path+"/"+page.featured_image)}}"/>
+                    {%endif%}
+                    {{ page }}
+                </div>
+                <!--</div>-->
+            </article>
+
+{% endblock %}
+
+

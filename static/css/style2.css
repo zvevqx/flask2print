@@ -252,7 +252,7 @@ em img {
 key{
 	display: inline-block;
 	border:solid 1px darkgray;
-  border-radius:5px;
+        border-radius:5px;
 	background: lightgrey;
 	padding: 0.5em;
 	font-weight: bolder;
