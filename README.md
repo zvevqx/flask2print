@@ -1,9 +1,21 @@
 # FLASK2PRINT
 
 simple flask app to generate pdf from markdown file  
+
 https://www.markdownguide.org/cheat-sheet
 
-All images files must be in <key>*static/img/filename.ext*</key>
+All images files must be in ***static/img/filename.ext***
+
+## usage
+
+## rendering research data :
+ replace `localhost` with `192.168.3.141`
+
+- go to `http://localhost:5000` to view all **markdown** files as `html`
+- go to `http://localhost:5000/pdf` to generate pdf 
+- go to `http://localhost:5000/upload/` to upload **markdown** file
+- go to `http://localhost:5000/NAMEOFYOURFILE` to preview <this> article PDF ( no `.md` at the end in the url) 
+
 
 ## install
 
@@ -20,14 +32,7 @@ as usual
 5. `pip install -r requirements.txt`
 6. `flask run`
 
-## usage
-
-- go to `http://localhost:5000` to view all **markdown** files as `html`
-- go to `http://localhost:5000/pdf` to generate pdf 
-- go to `http://localhost:5000/upload` to upload **markdown** file
-
  
-
 all the styling is done in `style.css`
 
 
