@@ -99,7 +99,7 @@ Alice->John: Yes... John, how are you?
 
 
 
-*![alt](https://pixy.org/src/465/4654979.jpg)*
+*![alt](/static/img/img.jpg)*
 
 Massa enim nec dui nunc mattis enim. Id aliquet lectus proin nibh nisl condimentum id. Risus nec feugiat in fermentum posuere. Et tortor consequat id porta nibh. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Fusce id velit ut tortor pretium viverra. Sollicitudin aliquam ultrices sagittis orci a. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Aliquam ut porttitor leo a diam. Scelerisque varius morbi enim nunc faucibus a pellentesque. Malesuada fames ac turpis egestas maecenas pharetra convallis.
 
@@ -107,7 +107,7 @@ Ac turpis egestas integer eget aliquet nibh. Laoreet suspendisse interdum consec
 
 Enim tortor at auctor urna nunc. A scelerisque purus semper eget duis at tellus at urna. Ac felis donec et odio pellentesque diam volutpat commodo. At imperdiet dui accumsan sit amet nulla. Tellus mauris a diam maecenas. Donec ac odio tempor orci dapibus ultrices in iaculis. Vitae congue mauris rhoncus aenean vel. Arcu non odio euismod lacinia at. Velit sed ullamcorper morbi tincidunt ornare. Euismod lacinia at quis risus sed vulputate odio ut enim. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Rutrum quisque non tellus orci ac auctor. Mattis pellentesque id nibh tortor id aliquet lectus. Morbi tristique senectus et netus et malesuada fames ac. Quam id leo in vitae turpis massa. Suspendisse potenti nullam ac tortor vitae purus faucibus. Morbi enim nunc faucibus a. Quam lacus suspendisse faucibus interdum posuere.
 
-![alt](https://pixy.org/src/465/4654979.jpg)
+![alt](/static/img/img.jpg)
 
 Pulvinar elementum integer enim neque volutpat. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Orci nulla pellentesque dignissim enim sit amet venenatis. Quisque egestas diam in arcu. Bibendum enim facilisis gravida neque convallis a cras semper. Habitant morbi tristique senectus et netus et malesuada fames. Ut aliquam purus sit amet luctus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Turpis egestas sed tempus urna et pharetra. Nunc sed velit dignissim sodales ut eu sem integer. Augue lacus viverra vitae congue eu consequat ac felis. Adipiscing elit ut aliquam purus sit. Orci porta non pulvinar neque laoreet. Mauris pellentesque pulvinar pellentesque habitant. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sit amet massa vitae tortor condimentum. Erat imperdiet sed euismod nisi porta lorem. Fringilla urna porttitor rhoncus dolor purus non enim. Id porta nibh venenatis cras. Amet aliquam id diam maecenas ultricies mi eget mauris pharetra.
 
