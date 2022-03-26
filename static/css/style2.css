@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'belgika5th';
-    src: url('fonts/belgika-5th-webfont.woff2') format('woff2'),
-         url('fonts/belgika-5th-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'compagnonmedium';
@@ -91,11 +84,13 @@ footer, header, hgroup, menu, nav, section {
  :root {
   --title_1: 3em;
   --title_2: 2em;
-	--title_3: 1.9em;
-	--texte_l: 1.4em;
-	--texte_s: 1.0em;
+	--title_3: 1.4em;
+	--texte_l: 10pt;
+	--texte_s: 10pt;
 	--texte_black : #000;
 	--texte_white : #fff;
+	--image_opacity : 1;
+  --line-height: 1.2;
 }
 
 
@@ -105,6 +100,18 @@ body{
 	margin:auto;
 	line-height: 1;
   font-family: 'compagnonroman', monospace;
+	color : var(--texte_black);
+	line-height: var(--line-height);
+}
+
+a , img , .overlay , mark{
+	opacity:1;
+} 
+
+.overlay {
+	opacity: 0.3;
+	filter: grayscale(100%);
+	
 }
 
 ol, ul {
@@ -174,29 +181,10 @@ ol{
 
 blockquote, q {
 	color: grey;
-	padding: 1em;
+	padding: 1em 0em 1em 3em ;
 	font-style: italic;
 	position:relative;
 	display:block;
-	
-}
-
-blockquote:before {
-	content:'"';
-	display: block;
-	font-size:2em;
-	position: absolute;
-	top:-5px;
-	left:-10px;
-}
-
-blockquote:after {
-	content:'"';
-	display: block;
-	font-size:2em;
-	position: absolute;
-	bottom:10px;
-	right:5px;
 }
 
 table {
@@ -207,15 +195,47 @@ table {
 em, i{
 	font-family: compagnonlight_italic;
 	font-style : italic;
-} 
+}
+
 strong , b{
 	font-family:compagnonmedium;
-	font-weight: bolder;
+	/*! font-weight: bolder; */
 }
 
 strong em{
 	font-family:compagnonbold;
 }
+
+
+
+mark {
+    background: #000;
+    color: white;
+	font-family:compagnonmedium;
+
+}
+
+mark a{
+
+    color: white;
+	font-family:compagnonmedium;
+
+}
+a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footnote-ref {
+    font-size: 0.8em;
+    position: relative;
+    top: -4px;
+}
+.footnote {
+    font-size: .8em;
+}
+
+
 article{
 	position: relative;
 	padding:10mm;
@@ -258,8 +278,9 @@ h1{
 h2,h3 ,h4 {
 	font-size:var(--title_2);
 	line-height: 110%;
-	margin-bottom: 12pt;
+	/*! margin-bottom: 12pt; */
 	margin-top: 12pt;
+	/*! line-height: 1; */
 }
 
 img {
@@ -267,6 +288,7 @@ img {
 	display: block;
 	margin:auto;
 	margin-bottom: 2em; 
+	opacity:var(--image_opacity)
 }
 
 em img {
@@ -298,17 +320,17 @@ pre code{
 
 code{
 	font-family: mono;
-	color:darkgray;
+	/*! color:darkgray; */
 	font-weight:bold;
 }
 
 table{
-	border: solid 1px lightgrey;
+  bordfer:none;
 	margin:1em auto
 }
 
 table thead{
-	background: lightgray;
+	//background: lightgray;
 }
 
 table th{
@@ -317,7 +339,7 @@ table th{
 
 table td{
 	padding:0.5em;
-	border: solid 1px lightgray;
+	//border: solid 1px lightgray;
 }
 
 dl{
@@ -370,7 +392,7 @@ hr{
 
 @page{
 	size:A4; 
-	margin: 5mm 5mm 5mm 5mm; 
+	padding: 5mm 5mm 5mm 5mm; 
   //marks: crop ;
   //bleed:-30mm;
 	
@@ -427,6 +449,5 @@ hr{
 @page:nth(3){
 //    background:red;
 }
-
 
 

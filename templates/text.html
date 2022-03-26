@@ -5,39 +5,6 @@
 
 {% block content %}
 
-    <div id="cover">
-    <article>
-            <h1> {{cover.title}}</h1>
-            <span class="pub_date">{{cover.published}}</span>
-            <span class="subtitle">{{cover.subtitle}}</span>
-        <ul class="index_list">
-        {% for a in articles  %}
-           <li> {{a.author}} ,</li>
-        {% endfor %}
-        </ul>
-            <p>
-                {{cover}}
-            </p>
-            {%if cover.featured_image %}
-            <div class="cover_img">
-                <img src="{{cover.f_image}}"/>
-            </div>
-            {% endif %}
-    </article>
-    </div>
-
-    <article>
-    </article>
-
-    <div class="index">
-        <article>
-            <h2>Edito</h2>
-            <p>
-            {{edito}}
-            </p>
-        </article>
-    </div>
-
     <article>
     </article>
 
@@ -45,11 +12,17 @@
 
            <article>
         {% if a.overlay_img %}
-        <div class="overlay" style="background: url(/static/img/{{a.overlay_img}})"></div> )" >            
+        <div class="overlay" style="background: url(/static/img/{{a.overlay_img}})"></div>             
         {%endif%}
-                <div class="title_data">{{a.title}} - {{a.subtitle}}</div>
+                {% if a.title %}
+                <div class="title_data">{{a.title}} </div>
+                {% else %}
+                <div class="title_data"></div>
+                {% endif %}
                     <div class="content_wrapper {{a.template}} " >
-
+                {% if a.author %}
+                    <h3>{{a.author}}</h3>
+                {% endif %}
                     {{ a }}
                 </div>
                 <!--</div>-->
