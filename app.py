@@ -36,7 +36,19 @@ pages.get('foo')
 def index():
     articles = (p for p in pages if 'published' in p.meta)
     latest = sorted(articles, reverse=True,key=lambda p: p.meta['published'])
-    return render_template('text.html', articles=latest) 
+    cover = pages.get('cover')
+    edito = pages.get('edito')
+    return render_template('text.html', articles=latest, edito=edito,cover=cover) 
+    
+
+@app.route('/pdf')
+def pdfExport():
+    articles = (p for p in pages if 'published' in p.meta)
+    latest = sorted(articles, reverse=False,key=lambda p: p.meta['published'])
+    cover = pages.get('cover')
+    edito = pages.get('edito')
+    html =  render_template('text.html', articles=latest, edito=edito,cover=cover) 
+    return render_pdf(HTML(string=html))
 
 
 @app.route('/<path:path>/')
@@ -45,13 +57,6 @@ def pdfExportsingle(path):
     html =  render_template('single.html', page=page) 
     return render_pdf(HTML(string=html))
 
-
-@app.route('/pdf')
-def pdfExport():
-    articles = (p for p in pages if 'published' in p.meta)
-    latest = sorted(articles, reverse=False,key=lambda p: p.meta['published'])
-    html =  render_template('text.html', articles=latest) 
-    return render_pdf(HTML(string=html))
 
        
  

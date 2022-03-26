@@ -86,6 +86,20 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+
+
+ :root {
+  --title_1: 3em;
+  --title_2: 2em;
+	--title_3: 1.9em;
+	--texte_l: 1.4em;
+	--texte_s: 1.0em;
+	--texte_black : #000;
+	--texte_white : #fff;
+}
+
+
+
 body{
 	font-size:10pt;
 	margin:auto;
@@ -112,7 +126,7 @@ ol{
 
 
 #cover h1{
-  font-size:3.6em;
+  font-size:var(--title_1);
 	margin-top:5mm;
   font-family:'compagnonroman';
 }
@@ -127,12 +141,11 @@ ol{
 
 #cover .index_list li {
     display:inline;
-	  font-size:2.4em;
+	  font-size:1.1em;
 	  margin-top:5mm;
     font-family:'compagnonroman';
 	
 }
-
 .cover_img {
     display:block;
     max-width:100%;
@@ -149,12 +162,11 @@ ol{
 	 display: block;
 	 margin-top:0mm;
    font-family:'compagnonroman';
-   margin-bottom: 10px;
-	 
+   margin-bottom: 10px; 
 }
 
 .index h2{
-	  font-size:3.6em;
+	  font-size:var(--title_2);;
 	  margin-top:5mm;
     font-family:'compagnonroman';
     margin-bottom: 2em;
@@ -204,6 +216,22 @@ strong , b{
 strong em{
 	font-family:compagnonbold;
 }
+article{
+	position: relative;
+	padding:10mm;
+}
+
+article .overlay{
+	height:297mm;
+	position:absolute;
+	top:0;
+	left:0;
+	background-position: top center !important;
+	background-repeat: no-repeat!important;
+	background-size: 210mm auto  !important;
+	width: 100%;
+	z-index: -1;
+}
 
 article p {
 	margin-bottom:5mm;
@@ -211,35 +239,34 @@ article p {
 
 .content_wrapper{
 	padding: 0mm 0mm 0mm 0mm;
-  font-size:2.4em;
+  font-size:var(--texte_l);;
 }
 
 .col2{
 	   padding: 0mm 0mm 0mm 0mm;
      column-count: 2;
 	   column-gap: 2em;
-     font-size:1.2em;
+     font-size:var(--texte_s);
 }
 
 h1{
-	font-size:3.6em;
+	font-size:var(--title_1);
 	margin-top:5mm;
   font-family:'compagnonroman';
 }
 
 h2,h3 ,h4 {
-	font-size:2.4em;
+	font-size:var(--title_2);
 	line-height: 110%;
 	margin-bottom: 12pt;
 	margin-top: 12pt;
 }
 
 img {
-    max-width:90%!important;
-	 display: block;
+  max-width:90%!important;
+	display: block;
 	margin:auto;
 	margin-bottom: 2em; 
-	
 }
 
 em img {
@@ -252,7 +279,7 @@ em img {
 key{
 	display: inline-block;
 	border:solid 1px darkgray;
-        border-radius:5px;
+  border-radius:5px;
 	background: lightgrey;
 	padding: 0.5em;
 	font-weight: bolder;
@@ -279,9 +306,11 @@ table{
 	border: solid 1px lightgrey;
 	margin:1em auto
 }
+
 table thead{
 	background: lightgray;
 }
+
 table th{
 	padding:0.5em;
 }
@@ -290,10 +319,12 @@ table td{
 	padding:0.5em;
 	border: solid 1px lightgray;
 }
+
 dl{
 	padding: 0.5em;
 	font-size:0.8em;
 }
+
 dt{
 	font-family: compagnonbold;
 	margin-bottom:0.5em;
@@ -339,9 +370,9 @@ hr{
 
 @page{
 	size:A4; 
-	margin: 30mm 10mm 10mm 10mm; 
-//	marks: crop ;
-//	bleed:5mm;
+	margin: 5mm 5mm 5mm 5mm; 
+  //marks: crop ;
+  //bleed:-30mm;
 	
 	@top-right{
 			content:  counter(page);
@@ -350,7 +381,6 @@ hr{
 	   }
 	
 	@bottom-left ,	@bottom-right {
-
 	  }
 	
 	@top-center { 
@@ -359,29 +389,19 @@ hr{
 		font-size:0.7em;
     font-family:'compagnonroman';
     }
-	
-
-	
-}
-
-@page:blank {
-  @top-center { 
-    content: "This page is intentionally left blank";
-    }
 }
 
 @page:right{
-	margin-left: 20mm;
+	margin-left: 15mm;
 	@bottom-right{
 		  content: element(title);
 			font-size:1em;
       font-family:'compagnonroman';
-
 	 }
 }
 
 @page:left{
-	margin-right: 20mm;
+	margin-right: 15mm;
 	@bottom-left{
 		  content: element(title);
 	   		font-size:1em;
